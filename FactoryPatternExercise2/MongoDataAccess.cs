@@ -9,10 +9,12 @@ namespace FactoryPatternExercise2
         public List<Product> LoadData()
         {
             Console.WriteLine("I am reading data from mongo database.");
-            return new List<Product>();
-            new Product() { Name = "Whatever3", Price = 30};
+            return new List<Product>()
+            {
+                new Product() { Name = "Whatever3", Price = 30 }
+        };
         }
-
+    
 
         public void SaveData()
         {

@@ -15,10 +15,7 @@ namespace FactoryPatternExercise2
         public List<Product> LoadData()
         {
             Console.WriteLine("I am reading data from list database.");
-            return new List<Product>()
-            {
-                new Product() { Name ="Whatever", Price=10}
-            };
+          return Products;
         }
 
         public void SaveData()  
